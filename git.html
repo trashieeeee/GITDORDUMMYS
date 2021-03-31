@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Figyelemfelkeltő</title>
+</head>
+<body>
+    <p>GIT első lépések
+        1. Telepítés: https://git-scm.com/download/win <br/>
+    
+        Minden lépés tovább, a Git Basht telepítsük fel, saját munkánkat könnyíti meg. <br/>
+        2. C, vagy D meghajtó gyökerében dolgozzunk, egyszerűsödik a munkánk. <br/>
+        3. Regisztráció a GitHub.com oldalon (iskolai e-mail címmel  regisztráljunk) <br/>
+        4. Hozzunk létre egy repository-t, egyszerű névvel. <br/>
+        5. Azonosítás beállítása, szükséges a Github pontos kapcsolathoz <br/>
+        a. git config --global user.name "Github-on megadott név" <br/>
+        b. git config --global user.email "Github-on regisztrált emailcím" <br/>
+        6. Hozzunk létre a lokális mappánkba egy repositoryt. <br/>
+        a. mkdir repository-name <br/>
+        b. cd repository-name <br/>
+        c. git init <br/>
+        (a mappa létrehozást csinálhatjuk windows alól is természetesen) <br/>
+        7. Távoli kapcsolat beállítása a későbbi feltöltéshez <br/> 
+        a. # új origin nevű távoli kapcsolat beállítása<br/> 
+        b. git remote add origin repository-link (github-ból code-ból
+        elérhető a közvetlen link)<br/>
+        c. # távoli kapcsolatok lekérdezése <br/>
+        d. git remote -v <br/>
+        e. # origin nevű távoli kapcsolat frissítése <br/>
+        f. git fetch origin <br/>
+        g. # minden branch lekérdezése <br/>
+        h. git branch –a <br/>
+        
+        8. Hozzunk létre egy fájlt a lokális munkamappába (windowsban könnyebb) <br/>
+        9. Adjuk hozzá a fájlt az átmenetei tárolóhoz (stage) <br/>
+        Egyetlen fájl hozzáadása a staging area-hoz: <br/> 
+        a. git add file-name <br/>
+        Minden az aktuális mappában, vagy annak almappáiban található fájl hozzáadása a <br/>
+        staging area-hoz: <br/>
+        a. git add . <br/>
+        
+        i. Piros: azon fájlok, amik nem kerültek be a staging-area-ba <br/>
+        
+        ii. Zöld: azon fájlok, amik berültek a staging-area-ba <br/>
+        10. Státusz lekérdezése <br/>
+        a. git status <br/>
+        11. Átmeneti tárolóból a repoba való áttöltés (kommitálunk)  <br/>
+        a. leíró szöveg megadása parancssori argumentummal <br/>
+        b. git commit -m "Kötelező megjegyzést tenni" <br/>
+        12. Eddigi verzió megtekintése <br/>
+        a. git log <br/>
+        i. Minden egyes bejegyzéshez a következőhöz hasonlót fogunk látni: <br/>
+        commit a661d9249509f8aa8f81f6f58129d57eb36b81d6 <br/>
+        Author: Gergo Roth <roth@dcs.uni-pannon.hu> <br/>
+        Date: Wed Jul 6 18:36:01 2016 +0200 <br/>
+        My first commit. <br/>
+        ii. A "commit" után szereplő szám egy hash érték, ami a fájlokból kerül  generálásra. <br/>
+        iii. Az "Author:" után szerepel a változtatás végrehajtójának a neve és e-mail címe. <br/>
+        iv. A "Date:" után szerepel a módosítás végrehajtásának dátuma. <br/>
+        v. Minden alatta levő szöveg a következő bejegyzésig a commit leírása. <br/>
+        13. Fájl és verzió feltöltése távoli tárhelyre <br/>
+        a. git remote –v (kapcsolatot ellenőrizzük) <br/>
+        b. git push origin master <br/>
+        14. Távoli tárhely adatainak letöltése, helyi verzió frissítése <br/>
+        
+        
+        15. git pull origin master</p>
+    <a href="git.html">  Tovább </a>  <a href="index.html">  Vissza </a>
+
+    
+</body>
+</html>
